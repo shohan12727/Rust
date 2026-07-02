@@ -1,5 +1,5 @@
 
 fn main(){
-    print!("This is my first code in RUST. ---King Shohan!🫤")
+    print!("This is my first code in RUST.  ---King Shohan!🫤")
 }
 
