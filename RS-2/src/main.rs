@@ -27,10 +27,30 @@ fn tuple(){
   println!("{:?}", tup)
 }
 
+fn array(){
+    let numbers = [1,2,3,4,5,6,7,8,9];
+    println!("{:?}", numbers)
+}
+
+fn another_function (x: i32){  // use of parameters
+   println!("The value of X is {x}")
+}
+
+
+fn ownerShipMoved (){
+    let name1 = String::from("King Shohan");
+    let _name2 = name1.clone();
+    println!("{name1}{}", "{name2}")
+}
+
+
 
 fn main() {
     // sum();
     // scope();
     // spaces();
     // tuple();
+    // array();
+    // another_function(100); // use of parameters
+    ownerShipMoved();
 }
