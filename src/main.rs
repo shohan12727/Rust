@@ -31,7 +31,23 @@ fn main () {
 
 
 
-println!("shohan")
+// println!("shohan")
+
+
+// let language = String::from("Rust as rs");
+
+// println!("{language}")
+
+
+
+
+let language: &str = "Rust";
+
+println!("{language}");
+
+
+
+
 
 
 
