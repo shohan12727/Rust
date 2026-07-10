@@ -19,9 +19,43 @@ fn slicing(){
 }
 
 
+use chrono::{Local, Utc};
+
+
+struct User {   // struct is basically a object like in other language ... 
+    active: bool,
+    userName: String,
+    email: String,
+    sign_in_count: u32,
+}
+
+fn User1 (){
+    let user1 = User {
+        active:true,
+        userName: "King Shohan".to_string(),
+        email: "king.shohan@gmail.com".to_string(),
+        sign_in_count: 1, 
+    };
+
+    println!("{}", user1.userName);
+}
+
+
+
 
 fn main() {
-    slicing();
+
+    User1();
+
+    let now = Local::now();
+    // println!("current time is {}", now);
+
+    
+
+
+
+
+    // slicing();
     // reference();
 
    let x = true;
