@@ -40,12 +40,55 @@ fn User1 (){
     println!("{}", user1.userName);
 }
 
+fn learn_enum() {
+#[derive(Debug)]
+enum IpAddrKind{
+    V4(String),
+    V6(String),
+}
+let four = IpAddrKind::V4(String::from("this is fucking ip 4 address"));
+let six = IpAddrKind::V6(String::from("this is fucking ip 6 address"));
+println!("{:?}", four);
+println!("{:?}", six);
+}
+
+fn learn_enum_2() {
+
+    enum Direction{
+        Up,
+        Down,
+        Left,
+        Right,
+    }
+
+    let my_direction = Direction::Right;
+
+    match my_direction {
+        Direction::Up => println!("Going up"),
+        Direction::Down => println!("Going down"),
+        Direction::Left => println!("Going Left"),
+        Direction::Right => println!("Going RIght"),
+    }
+
+}
+
+
+
 
 
 
 fn main() {
 
-    User1();
+
+
+
+
+
+
+// learn_enum();
+learn_enum_2();
+
+    // User1();
 
     let now = Local::now();
     // println!("current time is {}", now);
