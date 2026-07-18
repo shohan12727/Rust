@@ -72,7 +72,6 @@ fn learn_enum_2() {
 
 }
 
-
 fn enum_coin() {
 
     enum Coin {
@@ -101,8 +100,6 @@ fn learn_some () {
    println!("{:?}", fruit);
 }
 
-
-
 fn learn_some_2 (){
     // let age = Some(20);
     let age: Option<i32> = None;
@@ -119,6 +116,45 @@ fn learn_some_2 (){
 
 
 }
+
+fn learn_impl (){
+    struct Person {
+        name : String,
+        age: u32,
+    }
+    impl Person {
+        fn introduce (&self){
+            println!("Hi, My name is {}", self.name);
+        }
+    }
+    let person = Person{
+        name : String::from("king Shohan"),
+        age: 20,
+    };
+    person.introduce();
+}
+
+fn learn_impl_2(){
+    struct Person {
+        name: String,
+        age : u32,
+    }
+    impl Person {
+        fn introduce (&self){
+            println!("My name is {}", self.name);
+        }
+    }
+
+    let person = Person {
+        name : String::from("King of the ring King Shohan"),
+        age : 20,
+    };
+
+    person.introduce();
+
+
+}
+
 
 
 
@@ -137,28 +173,19 @@ fn main() {
 
 
 
-
-
-learn_some_2();
+// learn_impl_2();
+// learn_impl();
+// learn_some_2();
 // learn_some();
 // enum_coin();
 // learn_enum();
 // learn_enum_2();
-
-    // User1();
-
-    let now = Local::now();
-    // println!("current time is {}", now);
-
-    
-
-
-
-
-    // slicing();
-    // reference();
-
-   let x = true;
-        //   read(x);
+// User1();
+let now = Local::now();
+// println!("current time is {}", now);
+// slicing();
+// reference();
+let x = true;
+//read(x);
 
 }
