@@ -73,6 +73,59 @@ fn learn_enum_2() {
 }
 
 
+fn enum_coin() {
+
+    enum Coin {
+        Penny,
+        Nickel,
+        Dime,
+        Quarter,
+    }
+
+    fn value_in_cents (coin: Coin) -> u8 {
+        match coin {
+            Coin::Penny => {
+                println!("Lucky penny!");
+                1
+            },
+            Coin::Nickel => 5,
+            Coin::Dime => 10,
+            Coin::Quarter => 25,
+        }
+    }
+
+}
+
+fn learn_some () {
+   let fruit = Some("Apple");
+   println!("{:?}", fruit);
+}
+
+
+
+fn learn_some_2 (){
+    // let age = Some(20);
+    let age: Option<i32> = None;
+    
+    match age {
+        Some(value) => {
+            println!("The age is {}", value);
+        }
+
+        None => {
+            println!("There is no age.");
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
 
 
 
@@ -85,8 +138,12 @@ fn main() {
 
 
 
+
+learn_some_2();
+// learn_some();
+// enum_coin();
 // learn_enum();
-learn_enum_2();
+// learn_enum_2();
 
     // User1();
 
