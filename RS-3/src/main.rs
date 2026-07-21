@@ -163,6 +163,7 @@ use crate::garden::water_in_plaint;
 use crate::king::calling_king;
 mod vector;
 use crate::vector::learn_vector;
+use crate::vector::learn_vector_2;
 
 
 
@@ -173,8 +174,8 @@ fn main() {
 
 
 
-
-learn_vector();
+learn_vector_2();
+// learn_vector();
 // garden::water_in_plaint();
 // calling_king();
 // water_in_plaint();

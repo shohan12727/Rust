@@ -19,3 +19,24 @@ pub fn learn_vector() {
     }
 
 }
+
+
+pub fn learn_vector_2 () {
+    // println!("from vector 2");
+
+    let mut v = vec![1,2,3,4,5,6,7,8,9];
+    let fifth = v[5];
+
+    println!("{}",fifth);
+
+    for i in &v {
+        println!("{i}")
+    }
+
+    let fifth = v.get(5);
+    match fifth {
+        Some(fifth) => println!("The fifth element is {fifth}"),
+        None => println!("There is no fifth element"),
+    }
+
+}
