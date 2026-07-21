@@ -1,5 +1,3 @@
-
-
 fn read(y: bool){
     if y {
         println!("y is true!");
@@ -160,11 +158,11 @@ fn learn_impl_2(){
 
 
 mod garden;
+mod king;
 use crate::garden::water_in_plaint;
-
-
-
-
+use crate::king::calling_king;
+mod vector;
+use crate::vector::learn_vector;
 
 
 
@@ -173,10 +171,13 @@ use crate::garden::water_in_plaint;
 fn main() {
 
 
-    garden::water_in_plaint();
 
 
-water_in_plaint();
+
+learn_vector();
+// garden::water_in_plaint();
+// calling_king();
+// water_in_plaint();
 // learn_impl_2();
 // learn_impl();
 // learn_some_2();
