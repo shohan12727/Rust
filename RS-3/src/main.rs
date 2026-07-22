@@ -164,6 +164,9 @@ use crate::king::calling_king;
 mod vector;
 use crate::vector::learn_vector;
 use crate::vector::learn_vector_2;
+mod generic;
+use crate::generic::generic;
+use crate::generic::generic_2;
 
 
 
@@ -173,8 +176,9 @@ fn main() {
 
 
 
-
-learn_vector_2();
+generic_2();
+generic();
+// learn_vector_2();
 // learn_vector();
 // garden::water_in_plaint();
 // calling_king();
