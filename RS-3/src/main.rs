@@ -155,6 +155,15 @@ fn learn_impl_2(){
 
 }
 
+// fn conversation() {
+//      let greeting = String::from("Hello earth");
+//      let response = greeting;
+//      response.pop();
+//      response.insert(response.len(), '?');
+
+//      println!("{greeting}");
+//      println!("{response}");
+// }
 
 
 mod garden;
@@ -167,6 +176,12 @@ use crate::vector::learn_vector_2;
 mod generic;
 use crate::generic::generic;
 use crate::generic::generic_2;
+mod hashmap;
+use crate::hashmap::hashmap;
+
+
+
+
 
 
 
@@ -175,9 +190,10 @@ use crate::generic::generic_2;
 fn main() {
 
 
-
-generic_2();
-generic();
+hashmap();
+// conversation();
+// generic_2();
+// generic();
 // learn_vector_2();
 // learn_vector();
 // garden::water_in_plaint();
