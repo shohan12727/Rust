@@ -180,7 +180,8 @@ mod hashmap;
 use crate::hashmap::hashmap;
 mod closure;
 use crate::closure::closure;
-
+mod twosum;
+use crate::twosum::Solution;
 
 
 
@@ -191,7 +192,8 @@ use crate::closure::closure;
 fn main() {
 
 
-closure();    
+add_two_numbers( l1 = [2,4,3], l2 = [5,6,4]);
+// closure();    
 // hashmap();
 // conversation();
 // generic_2();
