@@ -18,6 +18,7 @@
                     None => 0,
                 };
                 
+                
                 let y = match l2.take(){
                     Some(node) => {
                         l2 = node.next;
