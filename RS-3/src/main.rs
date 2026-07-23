@@ -178,7 +178,8 @@ use crate::generic::generic;
 use crate::generic::generic_2;
 mod hashmap;
 use crate::hashmap::hashmap;
-
+mod closure;
+use crate::closure::closure;
 
 
 
@@ -190,7 +191,8 @@ use crate::hashmap::hashmap;
 fn main() {
 
 
-hashmap();
+closure();    
+// hashmap();
 // conversation();
 // generic_2();
 // generic();
